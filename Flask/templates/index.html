@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{content}}</h1>
+    {% for p in content %}
+        <li>{{ p }}</li>
+    {% endfor%}
+
+    {% for pass in u %}
+        <li>{{ pass.username }}</li>
+    {% endfor%}
+{% endblock %}

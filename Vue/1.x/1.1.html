@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue</title>
+    </head>
+    <body>
+
+    <div id="app">
+        <h1 v-if="show">{{message}}</h1>
+        <input type="text" v-model="message">
+        <li v-for="todo in todos">
+            {{todo.text}}
+        </li>
+        <a v-bind:href="url">google</a>
+        <button type="button" name="button" v-on:click="change">Click</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = {
+            data(){
+                return{
+                    message:"Hello",
+                    show:true,
+                    todos:[
+                        {text: 'A'},
+                        {text:'item2'},
+                        {text:'item3'},
+                    ],
+                    url:'https://www.google.com'
+                }
+            },
+            methods:{
+                change(){
+                    this.url = "https://www.baidu.com"
+                }
+            }
+        }
+
+        Vue.createApp(app).mount("#app")
+    </script>
+    </body>
+</html>

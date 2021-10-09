@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Flask APP</title>
+    {% endif %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <h1>Base</h1>
+    {% block content %}
+        <h2>Parent</h2> 子类能继承它，所以会重写覆盖
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/inputBuffer.c
+inputBuffer.h
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/inputBuffer.h
+
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/inputBuffer.h
+stdio.h
+-
+stdlib.h
+-
+linkList.h
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/linkList.h
+
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/linkList.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/main.c
+stdio.h
+-
+stdlib.h
+-
+linkList.h
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/linkList.h
+inputBuffer.h
+/home/yarnom/Area/Note/DataStructure/code/LinearList/LinkList/inputBuffer.h
+
